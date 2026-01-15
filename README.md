@@ -1,4 +1,4 @@
-# Span
+# Progression Widget
 **A minimalist macOS widget to track the passage of time.**
 
 It shows the progress between any two dates (semesters, deadlines, years) with over 100 unique status messages ranging from helpful to existential.

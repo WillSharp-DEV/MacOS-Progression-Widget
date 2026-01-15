@@ -67,6 +67,14 @@
 			);
 			target = 693406702F199B6900FB00A7 /* The WidgetExtension */;
 		};
+		697C20E22F19A97D00D19622 /* Exceptions for "The Widget" folder in "Progression Widget" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppIntent.swift,
+				The_Widget.swift,
+			);
+			target = 693406402F199B4900FB00A7 /* Progression Widget */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +96,7 @@
 		693406772F199B6900FB00A7 /* The Widget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				697C20E22F19A97D00D19622 /* Exceptions for "The Widget" folder in "Progression Widget" target */,
 				693406862F199B6A00FB00A7 /* Exceptions for "The Widget" folder in "The WidgetExtension" target */,
 			);
 			path = "The Widget";

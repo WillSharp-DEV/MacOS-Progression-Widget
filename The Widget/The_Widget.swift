@@ -158,8 +158,11 @@ struct The_WidgetEntryView : View {
     var body: some View {
         let sStart = entry.configuration.startDate ?? Date ()
         let sEnd = entry.configuration.endDate ?? Date()
+        let sTitle = entry.configuration.ProgressTitle ?? "Loading..."
         let Progress = GetPercentage(start: sStart, end: sEnd)
         VStack {
+            Text(sTitle)
+                .font(Font.headline.bold())
             ProgressView(value: Progress)
             Text(String(Int(Progress*100)) + "%")
                 .font(Font.caption.bold())

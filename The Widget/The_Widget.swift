@@ -41,10 +41,9 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationAppIntent
 }
 
-func GetPercentage(start: Date, end: Date) -> Double {
-    let now = Date()
+func GetPercentage(current: Date, start: Date, end: Date) -> Double {
     let totalduration = end.timeIntervalSince(start)
-    let elapsed = now.timeIntervalSince(start)
+    let elapsed = current.timeIntervalSince(start)
     let percentage = (elapsed/totalduration)
     return max(0, min(1,percentage))
 }
@@ -159,7 +158,7 @@ struct The_WidgetEntryView : View {
         let sStart = entry.configuration.startDate ?? Date ()
         let sEnd = entry.configuration.endDate ?? Date()
         let sTitle = entry.configuration.ProgressTitle ?? "Loading..."
-        let Progress = GetPercentage(start: sStart, end: sEnd)
+        let Progress = GetPercentage(current: entry.date, start: sStart, end: sEnd)
         VStack {
             Text(sTitle)
                 .font(Font.headline.bold())

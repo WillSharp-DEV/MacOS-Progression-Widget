@@ -19,5 +19,3 @@ It shows the progress between any two dates (semesters, deadlines, years) with o
 
 **William Sharp**
 *Physics Student & Developer*
-
-Projects like this combine my passion for Quantum Mechanics with practical software engineering.
